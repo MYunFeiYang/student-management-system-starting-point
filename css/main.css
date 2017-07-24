@@ -1,0 +1,131 @@
+body .container{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.container{
+    background-color: darkgray;
+}
+.header, .main, .footer{
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    border-bottom: 1px double beige;
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
+}
+.header .carousel{
+    width: 100%;
+}
+.header .carousel a{
+    width: 50%;
+}
+.header .carousel .item img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+}
+.main .left{
+    width: 24%;
+    height: auto;
+    float: left;
+}
+.main .left table{
+    height: auto;
+    box-shadow: 2px 2px  2px 2px dimgray;
+    border-radius: 5px;
+}
+.main .left table tr td{
+    text-align: center;
+    font-family: "黑体";
+    font-size: 24px;
+    color: ghostwhite ;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.main .left table tr td:hover{
+    background-color: aquamarine;
+}
+.main .left table tr td marquee{
+    padding: 0px;
+    margin: 0px;
+}
+.main .left table tr td marquee img{
+    padding: 0px;
+    margin: 0px;
+    width: 96%;
+    height: 150px;
+}
+.main .right{
+    width: 72%;
+    float: right;
+    box-shadow: 2px 2px 2px 2px dimgray;
+}
+ #student_info,#score_report{
+    display: none;
+}
+.main .right table{
+    border: 1px solid white;
+    margin: 20px;
+}
+.main .right .student_info table{
+    border:1px solid ghostwhite;
+}
+.main .right  table td:hover{
+    background-color: aquamarine;
+    border-radius: 3px;
+    border:1px solid ghostwhite;
+}
+.main table thead tr td{
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+.main  table tbody tr td input,select{
+    width: 100px;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 1px 3px;
+    color: black;
+    background-color: white;
+}
+.main .right button{
+    padding: 5px 20px;
+    margin: 10px 50px;
+    background-color: aquamarine;
+    border-radius: 3px;
+}
+.main .right  table tbody tr td button{
+    padding: 5px;
+    margin: 1px;
+}
+.main .right .search{
+    float: right;
+}
+.main .right .search input{
+    height: 30px;
+    width: 150px;
+    padding: 10px;
+}
+.main .right .search input:hover{
+    border: 1px solid dodgerblue;
+}
+.main .right #score_report table{
+    border: 1px solid white;
+}
+.main .right #score_report table tr td{
+    padding: 5px 40px;
+    border: 1px solid white;
+}
+.footer a{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    display: block;
+}
