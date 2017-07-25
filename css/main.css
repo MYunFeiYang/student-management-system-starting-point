@@ -66,7 +66,10 @@ body .container{
     float: right;
     box-shadow: 2px 2px 2px 2px dimgray;
 }
- #student_info,#score_report{
+ #student_info{
+    display: block;
+}
+#score_report{
     display: none;
 }
 .main .right table{
@@ -86,23 +89,27 @@ body .container{
     text-align: center;
     border: 1px solid white;
 }
-.main  table tbody tr td input,select{
-    width: 100px;
+.main  table tbody tr td{
+    border: 1px solid white;
+}
+.main  table tbody tr td input{
+    width: 70px;
     border-radius: 3px;
     padding: 4px;
     margin: 1px 3px;
     color: black;
     background-color: white;
+    border: 1px solid dodgerblue;
 }
 .main .right button{
     padding: 5px 20px;
-    margin: 10px 50px;
+    margin: 12px 45px;
     background-color: aquamarine;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .main .right  table tbody tr td button{
-    padding: 5px;
-    margin: 1px;
+    padding: 3px;
+    margin: 3px;
 }
 .main .right .search{
     float: right;
@@ -111,15 +118,17 @@ body .container{
     height: 30px;
     width: 150px;
     padding: 10px;
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
 }
 .main .right .search input:hover{
-    border: 1px solid dodgerblue;
+    border: 1px solid darkmagenta;
 }
 .main .right #score_report table{
     border: 1px solid white;
 }
 .main .right #score_report table tr td{
-    padding: 5px 40px;
+    padding: 5px 30px;
     border: 1px solid white;
 }
 .footer a{

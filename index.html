@@ -67,6 +67,9 @@
                 <tr>
                     <td onclick="changeDiv('score_report','student_info')">查看学生成绩>>></td>
                 </tr>
+                <tr>
+                    <td onclick="clear_data()">清空全部数据</td>
+                </tr>
                 <tr>>
                     <td><<<退出</td>
                 </tr>
@@ -87,7 +90,7 @@
         </div>
         <div class="right">
             <div id="student_info">
-                <form method="post" action="">
+                <form method="post" action="index.html">
                 <table>
                     <thead>
                     <tr>
@@ -95,43 +98,42 @@
                         <td>学号</td>
                         <td>民族</td>
                         <td>班级</td>
-                        <td>学科</td>
-                        <td>成绩</td>
+                        <td>数学</td>
+                        <td>语文</td>
+                        <td>英语</td>
+                        <td>编程</td>
                         <td>操作</td>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="students">
                     <tr>
                         <td><input name="name" type="text"></td>
                         <td><input name="sno" type="text"></td>
                         <td><input name="native" type="text"></td>
                         <td><input name="Class" type="text"></td>
+                        <td><input name="math" type="text"></td>
+                        <td><input name="chinese" type="text"></td>
+                        <td><input name="english" type="text"></td>
+                        <td><input name="program" type="text"></td>
                         <td>
-                            <select name="course">
-                                <option value ="math">数学</option>
-                                <option value ="chinese">语文</option>
-                                <option value="english">英语</option>
-                                <option value="program">编程</option>
-                            </select>
-                        </td>
-                        <td><input name="score" type="text"></td>
-                        <td>
-                            <button type="button">添加</button>
-                            <button type="button">删除</button>
+                            <button type="button" title="添加一行表格" onclick="create_and_add_nodes()">添加</button>
+                            <button type="button" title="删除一行表格">删除</button>
                         </td>
                     </tr>
                     </tbody>
                 </table>
-                    <button type="submit" onclick="input_info_web_Storage()">提交</button>
+                    <button title="所有信息都需输入" onclick="input_info_web_Storage()">添加学生</button>
+                    <button title="只需输入学号" onclick="delete_info_web_Storage()">删除学生</button>
+                    <button title="所有信息都需输入" onclick="revise_info_web_Storage()">修改信息</button>
                     <button type="reset">重置</button>
                 </form>
             </div>
             <div id="score_report">
                 <div class="search">
-                    <input type="text" placeholder="input your sno">
-                    <input type="text" placeholder="input your sno">
-                    <input type="text" placeholder="input your sno">
-                    <button>submit</button>
+                    <input type="text" placeholder="input your sno" name="search_sno">
+                    <input type="text" placeholder="input your sno" name="search_sno">
+                    <input type="text" placeholder="input your sno" name="search_sno">
+                    <button onclick="query_info_web_Storage()">submit</button>
                 </div>
                 <table>
                     <thead>
@@ -140,19 +142,14 @@
                         <td>学号</td>
                         <td>民族</td>
                         <td>班级</td>
-                        <td>学科</td>
-                        <td>成绩</td>
+                        <td>数学</td>
+                        <td>语文</td>
+                        <td>英语</td>
+                        <td>编程</td>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <tbody id="search">
+
                     </tbody>
                 </table>
             </div>
