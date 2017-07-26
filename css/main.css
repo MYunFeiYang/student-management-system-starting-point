@@ -43,10 +43,10 @@ body .container{
 .main .left table tr td{
     text-align: center;
     font-family: "黑体";
-    font-size: 24px;
+    font-size: 20px;
     color: ghostwhite ;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 15px;
 }
 .main .left table tr td:hover{
     background-color: aquamarine;
@@ -76,7 +76,7 @@ body .container{
     border: 1px solid white;
     margin: 20px;
 }
-.main .right .student_info table{
+.main .right  table{
     border:1px solid ghostwhite;
 }
 .main .right  table td:hover{
@@ -88,9 +88,12 @@ body .container{
     color: white;
     text-align: center;
     border: 1px solid white;
+    padding: 5px 22px;
 }
 .main  table tbody tr td{
     border: 1px solid white;
+    color: white;
+    text-align: center;
 }
 .main  table tbody tr td input{
     width: 70px;
@@ -128,13 +131,12 @@ body .container{
     border: 1px solid white;
 }
 .main .right #score_report table tr td{
-    padding: 5px 30px;
     border: 1px solid white;
 }
 .footer a{
     text-align: center;
     font-size: 24px;
     color: white;
-    padding: 10px;
+    padding: 5px;
     display: block;
 }
