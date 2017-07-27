@@ -64,7 +64,7 @@ function init() {
     else {
         students = JSON.parse(localStorage.students);
     }
-    return students
+    return students;
 }
 /*web 存储*/
 function input_info_web_Storage() {
@@ -154,6 +154,9 @@ function show_students_info() {
     } else {
         alert("抱歉! 不支持 web 存储。");
     }
+}
+window.onload=function () {
+    show_students_info();
 }
 function revise_info_web_Storage() {
     delete_info_web_Storage();

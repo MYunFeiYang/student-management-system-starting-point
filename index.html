@@ -75,9 +75,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <marquee behavior="scroll" contenteditable="true"
+                        <marquee behavior="scroll" contenteditable="true" scrolldelay="1"
                                  onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;"
-                                 scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();">
+                                 scrollamount="30" onmouseover="this.stop();" onmouseout="this.start();">
                             <img src="img/1.jpg">
                             <img src="img/2.jpg">
                             <img src="img/3.jpg">
@@ -126,7 +126,6 @@
                     <button title="只需输入学号" onclick="delete_info_web_Storage()">删除学生</button>
                     <button title="所有信息都需输入" onclick="revise_info_web_Storage()">修改信息</button>
                     <button type="reset">重置</button>
-                    <button title="显示所有学生信息" type="button" onclick="show_students_info()">显示所有学生信息</button>
                 </form>
                 <table>
                     <thead>
@@ -178,7 +177,7 @@
         </div>
     </div>
     <div class="footer">
-        <a href="">made by YunFeiYang</a>
+        <a href="https://github.com/MYunFeiYang">made by YunFeiYang</a>
     </div>
 
 </div>
